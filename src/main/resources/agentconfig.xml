@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- local -->
+<agentConfig><ssoProvider code="amore_story_stg" fail="https://stgsso.amorepacific.com/sso/failure.do" ip="165.225.228.119" timeout="5000" url="https://stgsso.amorepacific.com/sso/agentservice/unity/negotiate.do" validateSecureChannel="false"><X509Certificate>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkSkFqxxYBlUYBp7O8E4pxidWHgE5YAywzGlQrqx3iQs2dKljIaF6Hvdyv5E/NHcU1I3ZqRjcWUgE4XT75WJ0w9okB7xJTQWfSq8Lakl7je7MbZp8P1bmUIMH9w+CUe/S5fTdDiXeAqb5hhhNxgA7zJIeaxE1A4bVjwcVon0s7W5iXVhM1HtQybPwQippys4a8JBgcqiQn1tlFCOysTB6OKYgogrSg4+VmfgP8YvVxiiU6rCQ2q19GQSd1dT1/yIMUfRLi/eTXu9lmwGOKlN2Hc7OWc4SKj47wvxQP+zsU2CWthnULdvr5DllatsnNhd53y7ukHbMrgS1KZ/jno7rDwIDAQAB</X509Certificate></ssoProvider></agentConfig>

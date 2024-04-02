@@ -1,0 +1,795 @@
+/*******************************************************************************
+font-style   @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+*******************************************************************************/
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/** reset **/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: 14px;
+}
+
+html, body {
+    width: 100%;
+
+}
+
+body {
+    line-height: 1;
+    min-height: 100vh;
+
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    color: #ccc;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+    width: 100%;
+    outline: none;
+}
+
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+input[type=text]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=password]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* page style  */
+
+.log_wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-width: 590px;
+    height: 100vh;
+    min-height: 900px;
+    background: #f1f4f7;
+}
+
+.log_wrap header {
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    box-shadow: 0px 3px 0px 0px rgba(233, 236, 240, 0.2);
+    padding: 0px 160px;
+}
+
+.log_wrap header h1 {
+    padding-left: 65px;
+    line-height: 90px;
+    color: #6d6e71;
+    font-size: 36px;
+}
+
+.log_wrap section {
+    width: 100%;
+    height: calc(100% - 210px);
+    padding: 0px 160px;
+}
+
+.log_wrap section .log_form {
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    margin-left: -295px;
+    width: 590px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 3px rgba(221, 224, 226, 0.2);
+    z-index: 9;
+}
+
+.log_wrap section .log_form .title {
+    width: 100%;
+    height: 100px;
+    padding: 20px 53px;
+    background: -moz-linear-gradient(45deg, #16b196 32%, #4996d2 74%, #207cca 100%, #7db9e8 100%, #4996d2 102%);
+    background: -webkit-linear-gradient(45deg, #16b196 32%, #4996d2 74%, #207cca 100%, #7db9e8 100%, #4996d2 102%);
+    background: linear-gradient(45deg, #16b196 32%, #4996d2 74%, #207cca 100%, #7db9e8 100%, #4996d2 102%);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.log_wrap section .log_form .title h2 {
+    font-size: 30px;
+    text-shadow: 2px 2px 3px #189b8a;
+    color: rgba(255, 255, 255, 1);
+    line-height: 40px;
+    font-weight: normal;
+}
+
+.log_wrap section .log_form .title span {
+    font-size: 16px;
+    text-shadow: 0px 1px 3px rgba(24, 155, 138, 1);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.log_wrap section .log_form .form_content {
+    color: #3f4957;
+    padding: 30px 54px;
+
+}
+
+.log_wrap section .log_form .form_content dl {
+    margin-bottom: 20px;
+}
+
+.log_wrap section .log_form .form_content dl dt {
+    color: #9199a5;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.log_wrap section .log_form .form_content dl dd {
+    position: relative;
+}
+
+.log_wrap section .log_form .form_content dl dd input {
+    width: 438px;
+    height: 54px;
+    padding: 0px 20px;
+    border: 1px solid #e4e9f0;
+    border-radius: 5px;
+    background: #f2f4f7;
+    color: #3f4957;
+    font-size: 16px;
+}
+
+.log_wrap section .log_form .form_content dl dd select {
+    width: 438px;
+    height: 54px;
+    padding: 0px 20px;
+    border: 1px solid #e4e9f0;
+    border-radius: 5px;
+    background: #f2f4f7;
+    color: #3f4957;
+    font-size: 16px;
+}
+
+.log_wrap section .log_form .form_content dl dd i {
+    position: absolute;
+    cursor: pointer;
+}
+
+.log_wrap section .log_form .form_content dl dd i.clearBtn {
+
+    right: 21px;
+    top: 22px;
+    width: 13px;
+    height: 13px;
+}
+
+.log_wrap section .log_form .form_content dl dd i.passBtn {
+
+    right: 15px;
+    top: 22px;
+    width: 24px;
+    height: 14px;
+}
+
+.log_wrap section .log_form .form_content .info_box p {
+    padding: 0px 0px 0px 20px;
+    margin-bottom: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: #e4356b;
+    font-size: 14px;
+}
+
+.log_wrap section .log_form .form_content .checkBox {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+/* 체크박스  */
+
+.checkBox input[type="checkbox"] {
+    display: none;
+}
+
+.checkBox input[type="checkbox"] + label {
+    color: #3f4957;
+    font-size: 16px;
+}
+
+.checkBox input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: -2px 10px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.log_wrap section .log_form .form_content button {
+    width: 100%;
+    height: 62px;
+    margin-bottom: 30px;
+    background: #3f4957;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.log_wrap section .log_form .form_content button:hover {
+    opacity: 0.8;
+}
+
+.log_wrap section .log_form .form_content .link {
+    overflow: hidden;
+}
+
+
+.log_wrap section .log_form .form_content .link a.pass_search {
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    color: #3f4957;
+    font-size: 16px;
+}
+
+.log_wrap section .log_form .form_content .link a.pass_search:hover img {
+    opacity: 1;
+}
+
+.log_wrap section .log_form .form_content .link .pass_search img {
+    float: left;
+    margin-right: 10px;
+    opacity: 0.4;
+}
+
+.log_wrap section .log_form .form_content .link span {
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    color: rgba(145, 153, 165, 0.8);
+    font-size: 16px;
+}
+
+.log_wrap section .log_form .form_content .link span a {
+    color: #25aec7;
+    font-size: 16px;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+
+.log_wrap footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 120px;
+    background: #7a8491;
+    padding: 20px 160px;
+}
+
+.log_wrap footer .footer_ci {
+    float: left;
+}
+
+.log_wrap footer .footer_ci img {
+    margin: 10px 0px;
+}
+
+.log_wrap footer .footer_ci span {
+    display: block;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.log_wrap footer .footer_link {
+    float: right;
+    width: 320px;
+    margin-top: 10px;
+}
+
+.log_wrap footer .contact_box {
+    width: 100%;
+    float: right;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.log_wrap footer .contact_box li {
+    display: inline;
+    padding: 0px 5px;
+}
+
+.log_wrap footer .contact_box li:first-child {
+    padding-right: 20px;
+}
+
+
+.log_wrap footer .footer_link .select {
+    position: relative;
+    float: left;
+    line-height: 35px;
+    margin-left: 10px;
+}
+
+.log_wrap footer .footer_link .select > a {
+    display: block;
+    width: 132px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #4b535d;
+    border-radius: 4px;
+    padding: 0 8px;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.7);
+    background: #4d5765;
+}
+
+.log_wrap footer .footer_link .select > a:after,
+.log_wrap footer .footer_link .select > ul > li:first-child:after {
+    display: block;
+}
+
+.log_wrap footer .footer_link .select > a:after {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    content: '';
+    width: 12px;
+    height: 6px;
+}
+
+.log_wrap footer .footer_link .select > a.on:after {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    content: '';
+    width: 12px;
+    height: 6px;
+}
+
+.log_wrap footer .footer_link .select > a.on {
+    border: 1px solid #25aec7;
+}
+
+.log_wrap footer .footer_link .select > ul {
+    position: absolute;
+    width: 100%;
+    bottom: 34px;
+    background: #57616f;
+    border: 1px solid #4b535d;
+    display: none;
+    border-radius: 4px;
+}
+
+.log_wrap footer .footer_link .select > ul > li {
+    position: relative;
+    cursor: pointer;
+    padding: 0 8px;
+    height: 30px;
+    border-bottom: 1px solid #4b535d;
+    border-top: 0;
+    line-height: 30px;
+}
+
+.log_wrap footer .footer_link .select > ul > li:hover {
+    background: #4d5765;
+}
+
+.log_wrap footer .footer_link .select > ul > li:hover a {
+    color: #25aec7;
+}
+
+.log_wrap footer .footer_link .select > ul > li > a {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/*  회원가입  */
+section.signup {
+    background: #f1f4f7;
+}
+
+section.signup .membership_form {
+    width: 480px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+}
+
+section.signup .membership_form .form_title {
+    text-align: center;
+}
+
+section.signup .membership_form .form_title span {
+    font-size: 18px;
+    color: #9199a5;
+}
+
+section.signup .membership_form .form_title h2 {
+    font-size: 34px;
+    color: #21262e;
+    margin: 15px 0px 30px;
+}
+
+section.signup .membership_form .form_content {
+    padding-top: 15px;
+    border-top: 1px solid #707a88;
+}
+
+section.signup .membership_form .form_content dl {
+    margin-top: 20px;
+}
+
+section.signup .membership_form .form_content dl dt {
+    font-size: 16px;
+    color: #414448;
+    margin-bottom: 10px;
+}
+
+section.signup .membership_form .form_content dl dt i {
+    color: #e4356b;
+}
+
+section.signup .membership_form .form_content dl dd input {
+    border: 1px solid #d8e2e5;
+    border-radius: 4px;
+    width: 100%;
+    height: 42px;
+    padding: 0px 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #9199a5;
+}
+
+section.signup .membership_form .form_content dl dd select {
+    border: 1px solid #d8e2e5;
+    border-radius: 4px;
+    width: 100%;
+    height: 42px;
+    padding: 0px 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #9199a5;
+}
+
+button.next_btn {
+    margin-top: 40px;
+    width: 480px;
+    height: 62px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    background: -moz-linear-gradient(45deg, #16b196 32%, #4996d2 74%, #207cca 100%, #7db9e8 100%, #4996d2 102%);
+    background: -webkit-linear-gradient(45deg, #16b196 32%, #4996d2 74%, #207cca 100%, #7db9e8 100%, #4996d2 102%);
+    background: linear-gradient(45deg, #16b196 32%, #4996d2 74%, #207cca 100%, #7db9e8 100%, #4996d2 102%);
+    text-shadow: 2px 2px 3px #189b8a;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(231, 231, 231, 1);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(231, 231, 231, 1);
+    box-shadow: 3px 3px 5px 0px rgba(231, 231, 231, 1);
+}
+
+button.next_btn:hover {
+    opacity: 0.9;
+}
+
+/*  비밀번호 찾기 레이어  */
+.dimd {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+
+.layer_pop {
+    position: absolute;
+    width: 430px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    z-index: 999;
+    font-family: 'LGSmHaTSB';
+    color: #ccc;
+    border-radius: 4px;
+}
+
+.layer_pop .layer_head {
+    width: 100%;
+    height: 70px;
+    line-height: 74px;
+    padding: 0px 40px;
+    overflow: hidden;
+    border-bottom: 1px solid #eff3f7;
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(247, 249, 251, 0.5);
+    -moz-box-shadow: 0px 3px 0px 0px rgba(247, 249, 251, 0.5);
+    box-shadow: 0px 3px 0px 0px rgba(247, 249, 251, 0.5);
+}
+
+.layer_pop .layer_head strong {
+    float: left;
+    font-size: 20px;
+    color: #21262e;
+}
+
+.layer_pop .layer_head .close_btn {
+    float: right;
+}
+
+.layer_content {
+    padding: 0px 40px 20px;
+}
+
+.layer_pop .layer_info {
+    padding: 160px 0px 0px;
+}
+
+.layer_pop .layer_info p {
+    text-align: center;
+    font-size: 16px;
+    color: #3f4957;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.layer_pop dl {
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+.layer_pop dl dt {
+    font-size: 13px;
+    color: #3f4957;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+
+.layer_pop dl dd input {
+    width: 100%;
+    height: 32px;
+    border: 1px solid #d6dce4;
+    border-radius: 2px;
+    padding: 0px 14px;
+    color: #9199a5;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+.layer_pop dl dd input::placeholder {
+    color: #9199a5;
+    font-size: 13px;
+}
+
+.layer_pop .layer_content .info_box p {
+    padding: 0px 0px 0px 20px;
+    margin-bottom: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: #e4356b;
+    font-size: 14px;
+}
+
+.layer_pop .layer_bottom {
+    border-top: 1px solid #dee1e6;
+    margin-top: 30px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.layer_pop .layer_bottom button {
+    min-width: 67px;
+    height: 32px;
+    color: #fff;
+    font-size: 13px;
+    background: #e4356b;
+    border: 1px solid #c42858;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(231, 231, 231, 1);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(231, 231, 231, 1);
+    box-shadow: 3px 3px 5px 0px rgba(231, 231, 231, 1);
+}
+
+.layer_pop .layer_bottom button:hover {
+    opacity: 0.9;
+}
+
+/* =========================================================== */
+/* Privacy */
+/* =========================================================== */
+.layer_privacy {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    z-index: 999;
+    color: #ccc;
+    border-radius: 4px;
+    overflow-y: auto;
+}
+
+.layer_privacy .layer_head {
+    width: 100%;
+    height: 70px;
+    line-height: 74px;
+    padding: 0px 40px;
+    overflow: hidden;
+    border-bottom: 1px solid #eff3f7;
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(247, 249, 251, 0.5);
+    -moz-box-shadow: 0px 3px 0px 0px rgba(247, 249, 251, 0.5);
+    box-shadow: 0px 3px 0px 0px rgba(247, 249, 251, 0.5);
+}
+
+.layer_privacy .layer_head strong {
+    float: left;
+    font-size: 20px;
+    color: #21262e;
+}
+
+.layer_privacy .layer_head .close_btn {
+    float: right;
+}
+
+.layer_privacy_content {
+    padding: 40px 40px 20px;
+    color: #3f4957;
+    font-size: 14px;
+}
+
+.layer_privacy_content h2 {
+    font-size: 18px;
+    margin: 16px 0;
+    font-weight: bold;
+}
+
+.layer_privacy_content p {
+    margin: 14px;
+    line-height: 1.5;
+}
+
+.layer_privacy_content ul li {
+    margin: 7px 0;
+    line-height: 1.5;
+}
+
+/* privacy policy table */
+.table-wrap table tbody td {
+    /* border-collapse:collapse; */
+    text-align: left;
+    line-height: 1.5;
+    margin: 20px;
+    border: 1px solid #3f4957;
+    border-spacing: 10px;
+}

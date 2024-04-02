@@ -1,0 +1,31 @@
+server:
+  port: 8081
+
+spring:
+  mvc:
+    view:
+      prefix: "/WEB-INF/"
+      suffix: ".jsp"
+  config:
+    activate:
+      on-profile: default
+logging:
+  level:
+    root: INFO
+
+
+---
+server:
+  port: 8081
+
+spring:
+  mvc:
+    view:
+      prefix: "/WEB-INF/"
+      suffix: ".jsp"
+  config:
+    activate:
+      on-profile: product
+logging:
+  level:
+    root: INFO
