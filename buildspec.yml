@@ -1,0 +1,23 @@
+version : 0.2
+phases:
+  install:
+    runtime-versions:
+      java : corretto8
+  build:
+    commands:
+      - echo "===================== Build Starting ====================="
+      - chmod +x ./gradlew
+      - ./gradlew build -x test
+      #- mv build/libs/ap_sso-0.0.1-SNAPSHOT.jar  middleware.jar
+  post_build:
+    commands:
+      - echo "===================== Build Starting ====================="
+      - echo $(basename ./build/libs/*.jar)
+      - pwd
+
+artifacts:
+  files:
+    #- middleware.jar
+    - build/libs/*.jar
+    - appspec.yml
+    - scripts/**

@@ -4,6 +4,7 @@ import kr.co.ivy.net.story.sso.util.CommonUtil;
 import lombok.extern.slf4j.Slf4j;
 import nets.sso.agent.web.v9.SSOAuthn;
 import nets.sso.agent.web.v9.SSOUser;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -24,10 +25,14 @@ import java.util.HashMap;
 @Controller
 public class CertController {
 
+    @Value("${amore.story.url}")
+    private String amoreStoryUrl;
+
 
     @GetMapping("/cert")
     public void ssoCert(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
+        String ut = "";
         String uk = "";
         try {
 
@@ -36,15 +41,19 @@ public class CertController {
 
             if (!ObjectUtils.isEmpty(ssoUser)) {
                 userId = ssoUser.getUserID();
+
                 uk = CommonUtil.shaEncrypt(userId);
+                if (userId.length() > 2) {
+                    ut = userId.substring(0, 2);
+                }
             }
 
         } catch (Exception e) {
             log.error("" + e);
         }
 
-//        response.sendRedirect("https://stories.amorepacific.com/?uk=" + uk);
-        response.sendRedirect("https://dev.stories.amorepacific.com/?uk=" + uk);
+//        response.sendRedirect(amoreStoryUrl + "/?uk=" + uk);
+        response.sendRedirect(amoreStoryUrl + "/?ut=" + ut + "&uk=" + uk);
     }
 
 

@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ssm-user/story-sso/
+permissions:
+  - object: /home/ssm-user/story-sso/
+    pattern: "**"
+    owner : ssm-user
+    group: ssm-user
+hooks:
+  AfterInstall:
+    - location: scripts/start.sh
+      timeout: 300
+      runas: ssm-user

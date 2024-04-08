@@ -13,6 +13,31 @@ logging:
   level:
     root: INFO
 
+amore:
+  story:
+    url: "https://dev.stories.amorepacific.com"
+
+
+---
+server:
+  port: 8081
+
+spring:
+  mvc:
+    view:
+      prefix: "/WEB-INF/"
+      suffix: ".jsp"
+  config:
+    activate:
+      on-profile: stage
+logging:
+  level:
+    root: INFO
+
+amore:
+  story:
+    url: "https://dev.stories.amorepacific.com"
+
 
 ---
 server:
@@ -29,3 +54,8 @@ spring:
 logging:
   level:
     root: INFO
+
+amore:
+  story:
+    url: "https://stories.amorepacific.com"
+
