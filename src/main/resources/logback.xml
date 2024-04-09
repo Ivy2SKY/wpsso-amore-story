@@ -2,7 +2,7 @@
 <configuration>
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
 
-    <property name="LOGS_PATH" value="./logs"/>
+    <property name="LOGS_PATH" value="/home/ssm-user/story-sso/logs"/>
     <appender name="ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>error</level>
