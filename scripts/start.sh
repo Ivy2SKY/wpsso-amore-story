@@ -28,4 +28,5 @@ echo "> DEPLOY_PATH, JAR_NAME : $DEPLOY_PATH$JAR_NAME" >> /home/ssm-user/story-s
 echo "> DEPLOY_JAR 배포"    >> /home/ssm-user/story-sso/deploy.log
 
 chmod 755 $DEPLOY_JAR
-nohup java -jar $DEPLOY_JAR >> /home/ssm-user/story-sso/deploy.log 2>/home/ssm-user/story-sso/deploy_err.log &
+#nohup java -jar $DEPLOY_JAR >> /home/ssm-user/story-sso/deploy.log 2>/home/ssm-user/story-sso/deploy_err.log &
+nohup java -Dspring.profiles.active=stage -jar $DEPLOY_JAR 1>/dev/null 2>&1 &
