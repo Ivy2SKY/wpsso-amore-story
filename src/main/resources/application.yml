@@ -32,7 +32,7 @@ spring:
       on-profile: stage
 logging:
   level:
-    root: INFO
+    root: DEBUG
 
 amore:
   story:
@@ -53,7 +53,7 @@ spring:
       on-profile: product
 logging:
   level:
-    root: INFO
+    root: DEBUG
 
 amore:
   story:
