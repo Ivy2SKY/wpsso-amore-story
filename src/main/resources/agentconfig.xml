@@ -10,6 +10,7 @@
 <agentConfig><ssoProvider code="amore_story_stg2" fail="https://stgsso.amorepacific.com/sso/failure.do" ip="127.0.0.1" timeout="5000" url="https://stgsso.amorepacific.com/sso/agentservice/unity/negotiate.do" validateSecureChannel="false"><X509Certificate>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgAmgJlyz5E+a+z7V9mTpXnpLaLqp/M0xI3Z2F3RU40OC6J4XFrdq05jg8nW0wwMIC40TTTvHyPK8nYvALA0dkeHMoP00WNKPtOQ/m7LCZo+qOaUEK9TS0zubKDFtl5RZeUYjmu1PX2nlK+Qh1p7sQxCsMOissMeG65Um7G0riGUq0vDBP6pLEDceF9CzVIHEIu2OGCxmZeTTfolqy3AwhbGwRqJGuERZiulPnG6+/3tqz9Je/p0PvetdBxuLlgTjllHUAAPGe3drAoulRh++owOyxwCsxmJoEiGackqbdLvDnKLH5DZJ+za7RGrpUNHtOA1qQziHJvJzMZVUzGvnwwIDAQAB</X509Certificate></ssoProvider></agentConfig>
 -->
 
+
 <!-- prod -->
 <!--
 <agentConfig><ssoProvider code="amore_story_prd" fail="https://psso.amorepacific.com/sso/failure.do" ip="127.0.0.1" timeout="5000" url="https://psso.amorepacific.com/sso/agentservice/unity/negotiate.do" validateSecureChannel="false"><X509Certificate>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs+5jewDq7CrE6yV0wgiUl4MZVjdcypr+pKtV6IeafIQ4zTqM4cA85M/WvmdGid8tfp86fwXoB6457nECGGNYRlxowjoUUygsAplz8jl7m2Ed47WouNfqg6PMPyYwcayl4N/y2frRidUD8PhLszMDxbK+U9vCbW8J3E3CoVyQSU+6byxLytDLkLKOFYN7RmgGxK25W8cOVnh7MZOHNushJ2+NFCSA64n3Pj7xcLT+3ubvukKSrdNnim0thkWSwVmw/bj+KpsVlqG7ldejzndRNrbzB463Wj88HAO4swgUbqeOGq6d6pwcitd8XA8+vA/yMtmesx/ppH2r8pfid3h4LQIDAQAB</X509Certificate></ssoProvider></agentConfig>
