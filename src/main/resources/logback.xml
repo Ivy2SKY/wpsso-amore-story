@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <property name="LOG_TEMP" value="log/" />
+    <property name="LOG_TEMP" value="/data/story-sso/log" />
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
 
     <property name="LOGS_PATH" value="/data/story-sso/logs"/>
