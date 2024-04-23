@@ -5,6 +5,16 @@
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  <script language="javascript">
  location.replace('https://stories.amorepacific.com/?uk=${uk}');
+
+// let form = document.createElement('form');
+// let body = document.createElement('body');
+// form.action = 'https://stories.amorepacific.com';
+// form.method = 'POST';
+// // form.innerHTML = '<input name="uk" value="${uk}">';
+// document.body = body;
+// document.body.append(form);
+// form.submit();
+
  </script>
 </head>
 <body>

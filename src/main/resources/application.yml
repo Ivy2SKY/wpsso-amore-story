@@ -1,3 +1,4 @@
+# default는 운영으로
 server:
   port: 8081
 
@@ -11,11 +12,11 @@ spring:
       on-profile: default
 logging:
   level:
-    root: INFO
+    root: DEBUG
 
 amore:
   story:
-    url: "https://dev.stories.amorepacific.com"
+    url: "https://stories.amorepacific.com"
 
 
 ---
@@ -58,4 +59,3 @@ logging:
 amore:
   story:
     url: "https://stories.amorepacific.com"
-
