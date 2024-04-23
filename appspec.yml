@@ -8,8 +8,8 @@ permissions:
 #  - object: /home/ssm-user/story-sso/
   - object: /data/story-sso/
     pattern: "**"
-    owner : ssm-user
-    group: ssm-user
+    owner : tomcat
+    group: users
 hooks:
   AfterInstall:
     - location: scripts/start.sh
