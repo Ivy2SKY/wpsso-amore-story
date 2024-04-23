@@ -9,7 +9,7 @@ permissions:
   - object: /data/story-sso/
     pattern: "**"
     owner : tomcat
-    group: users
+    group: was
 hooks:
   AfterInstall:
     - location: scripts/start.sh
