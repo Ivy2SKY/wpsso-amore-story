@@ -12,6 +12,6 @@ permissions:
     group: was
 hooks:
   AfterInstall:
-    - location: scripts/start.sh
+    - location: scripts/start-stage.sh
       timeout: 300
       runas: tomcat
