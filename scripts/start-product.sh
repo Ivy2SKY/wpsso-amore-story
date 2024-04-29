@@ -34,4 +34,4 @@ chmod 755 $DEPLOY_JAR
 
 # default는 운영으로
 # prod
-nohup java -Dspring.profiles.active=stage -jar $DEPLOY_JAR 1>/dev/null 2>&1 &
+nohup java -Dspring.profiles.active=product -jar $DEPLOY_JAR 1>/dev/null 2>&1 &
