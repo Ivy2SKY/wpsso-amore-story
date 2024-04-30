@@ -1,4 +1,7 @@
 #!/bin/bash
+
+chmod +x /data/story-sso/scripts/start-stage.sh
+
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
 BUILD_JAR=$(ls /data/story-sso/build/libs/storysso-1.0.jar)
 JAR_NAME=$(basename $BUILD_JAR)
@@ -28,6 +31,7 @@ echo "> DEPLOY_PATH, JAR_NAME : $DEPLOY_PATH$JAR_NAME" >> /data/story-sso/deploy
 echo "> DEPLOY_JAR 배포"    >> /data/story-sso/deploy.log
 
 chmod 755 $DEPLOY_JAR
+
 
 # dev
 #nohup java -Dspring.profiles.active=stage -jar $DEPLOY_JAR 1>/dev/null 2>&1 &
