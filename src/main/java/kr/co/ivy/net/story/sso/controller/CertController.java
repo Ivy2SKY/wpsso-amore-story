@@ -11,9 +11,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.ObjectUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -29,7 +27,8 @@ public class CertController {
     private String amoreStoryUrl;
 
 
-    @GetMapping("/cert")
+//    @GetMapping("/cert")
+    @RequestMapping(value = "/cert", method = { RequestMethod.GET, RequestMethod.POST})
     public void ssoCert(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         String ut = "";
