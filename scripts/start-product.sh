@@ -1,4 +1,7 @@
 #!/bin/bash
+
+chmod +x /data/story-sso/scripts/start-product.sh
+
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
 BUILD_JAR=$(ls /data/story-sso/build/libs/storysso-1.0.jar)
 JAR_NAME=$(basename $BUILD_JAR)
