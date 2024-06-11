@@ -3,6 +3,7 @@ package kr.co.ivy.net.story.sso.util;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.xml.bind.DatatypeConverter;
+import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.util.Base64;
@@ -18,9 +19,11 @@ public class CommonUtil {
 
             MessageDigest md = MessageDigest.getInstance("SHA-512");
             md.update(planeText.getBytes(StandardCharsets.UTF_8));
-            encodingText = DatatypeConverter.printBase64Binary(md.digest());
 
-            encodingText = base64Encode(encodingText);
+            String hex = String.format("%0128x", new BigInteger(1, md.digest()));
+//            encodingText = DatatypeConverter.printBase64Binary(md.digest());
+
+            encodingText = base64Encode(hex);
 
         } catch (Exception e) {
             log.error("" + e);
