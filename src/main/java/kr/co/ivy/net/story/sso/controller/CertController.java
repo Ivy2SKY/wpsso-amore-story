@@ -53,6 +53,7 @@ public class CertController {
 
 //        response.sendRedirect(amoreStoryUrl + "/?uk=" + uk);
         response.sendRedirect(amoreStoryUrl + "/?ut=" + ut + "&uk=" + uk + "&haneul=" + "2SKY");
+
     }
 
 
